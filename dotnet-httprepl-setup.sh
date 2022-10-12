@@ -4,7 +4,7 @@ dotnet tool install -g Microsoft.dotnet-httprepl
 sleep 0.5
 dotnet dev-certs https --trust
 sleep 0.5
-if( -z $port); then
+if [ -z $port ]; then
     echo "Missing Port. Please specify the port:"
     read port
 else    
